@@ -1,0 +1,78 @@
+<div class="text-layout">
+<h1>Pipes Básicos</h1>
+<p>Pipes incluídos en Angular - Usualmente en el Common Module</p>
+</div>
+
+<div class="grid">
+    <div class="col-4">
+        <p-card header="uppercase"
+        [subheader]="nombreLower | uppercase">
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="lowercase"
+        [subheader]="nombreUpper | lowercase">
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="titlecase"
+        [subheader]="nombreLargo | titlecase">
+        </p-card>
+    </div>
+</div>
+<div class="text-layout">
+<p-card header="Date | Fecha | Pipe"
+subheader="Pipe para mostrar fechas">
+    <div class="grid">
+        <div class="col-6">
+            <p-card header="Fecha HTML">
+            <ul>
+                <li>fecha</li>
+                <li>fecha| date </li>
+                <li>fecha| date:'short'</li>
+                <li>fecha| date:'long' </li>
+                <li>fecha| date:'dd/mm/yy'</li>
+            </ul>
+            </p-card>
+        </div>
+        <div class="col-6">
+            <p-card header="Fecha Formato">
+           
+            <ul>
+                <li> {{fecha}}</li>
+                <li> {{fecha| date}}</li>
+                <li> {{fecha| date:'short'}}</li>
+                <li> {{fecha| date:'long'}}</li>
+                <li> {{fecha| date:'dd/MM/yyyy HH:mm'}}</li>
+                <li> {{fecha| date:'short'}}</li>
+                <li> {{fecha| date:'long'}}</li>
+                <li> {{fecha| date:'dd/MM/yyyy HH:mm'}}</li>
+            </ul>
+            </p-card>
+        </div>
+    </div>
+    <hr>
+    <div class="grid">
+        <div class="col-6">
+            <p-card header="Fecha HTML">
+            <ul>
+                <li>fecha</li>
+                <li>fecha| date:'short MX'</li>
+                <li>fecha| date:'long MX </li>
+                <li>fecha| date:'dd/mm/yy MX'</li>
+            </ul>
+            </p-card>
+        </div>
+        <div class="col-6">
+            <p-card header="Fecha Formato MX">
+            <ul>
+                <li> {{fecha}}</li>
+                <li> {{fecha| date:'short':'GMT-6':'es-MX'}}</li>
+                <li> {{fecha| date:'long':'GMT-6':'es-MX'}}</li>
+                <li> {{fecha| date:'dd/MM/yyyy HH:mm':'GMT-6':'es-MX'}}</li>
+            </ul>
+            </p-card>
+        </div>
+    </div>
+</p-card>
+</div>

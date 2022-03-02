@@ -1,5 +1,7 @@
+
 INSTRUCTIONS TO EXECUTE
 
-OPEN FOLDER ON CMD
-WITH Angular CLI INSTALLED EXECUTE: ng serve -o
-Enjoy!
+    OPEN FOLDER ON CMD
+    WITH Angular CLI INSTALLED EXECUTE: ng serve -o
+    Enjoy!
+

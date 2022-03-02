@@ -51,8 +51,8 @@ export class NoComunesComponent {
     this.genero=this.clientes[this.contador].genero
   }
   //i18nPlural
-  clientesArray: string[]= ['Estefanía', 'Arturo','Andrea','Juan'] 
-  clientesBack : string[]= ['Estefanía', 'Arturo','Andrea','Juan'] 
+  clientesArray: string[]= ['Estefanía', 'Daniel','Andrea','Juan'] 
+  clientesBack : string[]= ['Estefanía', 'Daniel','Andrea','Juan'] 
 
   clientesMapa={
     '=0': 'no tenemos ningun cliente esperando',
@@ -68,7 +68,7 @@ export class NoComunesComponent {
   //KeyValue Pipe
 
  persona ={
-   nombre: 'Arturo',
+   nombre: 'Juan',
    edad: 49,
    direccion: 'Puebla, México'
  }
